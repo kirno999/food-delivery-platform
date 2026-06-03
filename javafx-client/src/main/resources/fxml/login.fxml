@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.edu.sdu.controller.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-padding: 50; -fx-border-color: #cccccc; -fx-border-radius: 10;">
+    
+    <HBox alignment="CENTER">
+        <Label text="外卖点餐平台" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #FF6B00;"/>
+    </HBox>
+    
+    <Separator/>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="用户名:" style="-fx-font-size: 14;" minWidth="60"/>
+        <TextField fx:id="usernameField" promptText="请输入用户名" prefWidth="200"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="密码:" style="-fx-font-size: 14;" minWidth="60"/>
+        <PasswordField fx:id="passwordField" promptText="请输入密码" prefWidth="200"/>
+    </HBox>
+    
+    <HBox spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+        <Button fx:id="loginButton" text="登录" style="-fx-font-size: 14; -fx-padding: 10 40;" prefWidth="120"/>
+        <Button fx:id="registerButton" text="注册" style="-fx-font-size: 14; -fx-padding: 10 40;" prefWidth="120"/>
+    </HBox>
+    
+</VBox>
